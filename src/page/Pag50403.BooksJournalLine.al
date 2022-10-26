@@ -5,6 +5,7 @@ page 50403 "Books Journal Line"
     PageType = List;
     SourceTable = "Book Journal Line";
     UsageCategory = Lists;
+    AutoSplitKey = true;
 
     layout
     {
@@ -42,6 +43,27 @@ page 50403 "Books Journal Line"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Type field.';
                 }
+            }
+        }
+    }
+
+    actions
+    {
+        area(processing)
+        {
+            action(Post)
+            {
+                ApplicationArea = Basic, Suite;
+                Caption = 'Post';
+                Image = PostOrder;
+                Promoted = true;
+                ToolTip = 'Finalize the document or journal by posting the amounts and quantities to the related accounts in your company books.';
+
+                trigger OnAction()
+                begin
+                    CODEUNIT.Run(CODEUNIT::"Book Jnl.-Post", Rec);
+                    CurrPage.Update(false);
+                end;
             }
         }
     }
