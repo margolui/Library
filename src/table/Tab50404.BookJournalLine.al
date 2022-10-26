@@ -29,11 +29,13 @@ table 50404 "Book Journal Line"
         {
             Caption = 'Book Id';
             DataClassification = ToBeClassified;
+            TableRelation = Book;
         }
         field(6; "Customer No."; Code[20])
         {
             Caption = 'Customer No.';
             DataClassification = ToBeClassified;
+            TableRelation = Customer;
         }
     }
     keys
