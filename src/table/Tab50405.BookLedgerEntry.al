@@ -20,7 +20,7 @@ table 50405 "Book Ledger Entry"
             Caption = 'Return Date';
             DataClassification = ToBeClassified;
         }
-        field(4; "Type"; Enum "Book Operation")
+        field(4; Type; Enum "Book Operation")
         {
             Caption = 'Type';
             DataClassification = ToBeClassified;
