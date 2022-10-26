@@ -5,6 +5,7 @@ page 50402 "Books Ledger Entry"
     PageType = List;
     SourceTable = "Book Ledger Entry";
     UsageCategory = Lists;
+    Editable = false;
 
     layout
     {
