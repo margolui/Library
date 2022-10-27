@@ -15,10 +15,11 @@ table 50402 Book
             Caption = 'Book Name';
             DataClassification = ToBeClassified;
         }
-        field(3; Autor; Text[100])
+        field(3; Author; Code[20])
         {
-            Caption = 'Autor';
+            Caption = 'Author';
             DataClassification = ToBeClassified;
+            TableRelation = Author;
         }
         field(4; Pages; Integer)
         {

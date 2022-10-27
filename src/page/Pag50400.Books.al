@@ -12,10 +12,10 @@ page 50400 Books
         {
             repeater(General)
             {
-                field(Autor; Rec.Autor)
+                field(Autor; Rec.Author)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Autor field.';
+                    ToolTip = 'Specifies the value of the Author field.';
                 }
                 field("Book Id"; Rec."Book Id")
                 {
