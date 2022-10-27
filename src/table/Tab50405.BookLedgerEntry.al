@@ -37,8 +37,9 @@ table 50405 "Book Ledger Entry"
         }
         field(7; Author; Code[20])
         {
+            CalcFormula = lookup(Book.Author where("Book Id" = Field("Book Id")));
             Caption = 'Author';
-            DataClassification = ToBeClassified;
+            FieldClass = FlowField;
         }
     }
     keys
