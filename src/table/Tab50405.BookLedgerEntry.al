@@ -35,6 +35,11 @@ table 50405 "Book Ledger Entry"
             Caption = 'Customer No.';
             DataClassification = ToBeClassified;
         }
+        field(7; Author; Code[20])
+        {
+            Caption = 'Author';
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {

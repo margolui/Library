@@ -38,10 +38,15 @@ page 50402 "Books Ledger Entry"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Return Date field.';
                 }
-                field("Type"; Rec."Type")
+                field(Type; Rec.Type)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Type field.';
+                }
+                field(Author; Rec.Author)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Author field.';
                 }
             }
         }

@@ -37,6 +37,13 @@ table 50404 "Book Journal Line"
             DataClassification = ToBeClassified;
             TableRelation = Customer;
         }
+        field(7; Author; Code[20])
+        {
+            CalcFormula = lookup(Book.Author where("Book Id" = Field("Book Id")));
+            Caption = 'Author';
+            FieldClass = FlowField;
+            TableRelation = Book.Author;
+        }
     }
     keys
     {
